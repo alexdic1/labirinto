@@ -1,0 +1,50 @@
+
+body {
+  margin: 0;
+  font-family: 'Spectral SC', serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.testo-iniziale {
+  padding: 20vh 10vw;
+  font-size: 1.5rem;
+}
+
+.azione button {
+  padding: 10px 20px;
+  font-family: 'Spectral SC', serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.azione a {
+  font-family: 'Spectral SC', serif;
+}
+
+.pagina-soglia {
+  background: url('img/soglia-nebbia.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.pagina-frattura {
+  background: url('img/frattura-fessura.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.pagina-silenzio {
+  background: url('img/silenzio-stelle.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.pagina-specchio {
+  background: url('img/specchio-acqua.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.pagina-finale {
+  background: url('img/porta-portale.png') no-repeat center center fixed;
+  background-size: cover;
+}
