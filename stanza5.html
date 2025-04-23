@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Labirinto - La Porta Nascosta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=UnifrakturCook&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-finale">
+  <audio src="audio/porta-apertura.mp3" autoplay loop hidden></audio>
+
+  <div class="testo-finale">
+    <p>Ora che hai iniziato il tuo cammino...</p>
+    <p>Dimmi: <strong>qual è la tua città?</strong></p>
+    <p>E... <strong>cosa desideri cambiare nella tua esistenza?</strong></p>
+    <p><em>Le parole che scriverai resteranno in silenzio… ma non cadranno nel vuoto.</em></p>
+  </div>
+
+  <form action="https://formspree.io/f/xovdqndq" method="POST" class="form-verita">
+    <label for="citta">La tua città:</label><br>
+    <input type="text" name="citta" id="citta" required><br><br>
+
+    <label for="desiderio">Il tuo cambiamento interiore:</label><br>
+    <textarea name="desiderio" id="desiderio" rows="4" required></textarea><br><br>
+
+    <button type="submit">Consegna la tua verità</button>
+  </form>
+</body>
+</html>

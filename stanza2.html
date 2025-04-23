@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Labirinto - La Frattura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=UnifrakturCook&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-frattura">
+  <audio src="audio/frattura-dissonanza.mp3" autoplay loop hidden></audio>
+  <div class="sfondo frattura"></div>
+  <div class="frasi-contrapposte">
+    <div class="luce">Non temere. Tutto è come deve essere.</div>
+    <div class="ombra">Nulla è come credi. Tutto è sogno.</div>
+  </div>
+  <div class="azione">
+    <button onclick="vaiAvanti()">Prosegui</button>
+  </div>
+  <script>
+    function vaiAvanti() {
+      window.location.href = "stanza3.html";
+    }
+  </script>
+</body>
+</html>
