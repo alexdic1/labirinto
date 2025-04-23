@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Il Labirinto - La Frattura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .frasi-contrapposte {
+      text-align: center;
+      font-family: 'Spectral SC', serif;
+      font-size: 1.6rem;
+      color: white;
+      text-shadow: 0 0 8px black;
+      margin-bottom: 2rem;
+    }
+
+    .azione {
+      margin-top: 2rem;
+    }
+
+    .azione button {
+      font-family: 'Spectral SC', serif;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="pagina-frattura">
+  <audio src="audio/frattura-dissonanza.mp3" autoplay loop muted></audio>
+
+  <div class="frasi-contrapposte">
+    <div>Non temere. Tutto è come deve essere.</div>
+    <div>Nulla è come credi. Tutto è sogno.</div>
+  </div>
+
+  <div class="azione">
+    <button onclick="vaiAvanti()">Prosegui</button>
+  </div>
+
+  <script>
+    function vaiAvanti() {
+      window.location.href = "stanza3.html";
+    }
+    document.addEventListener("click", () => {
+      document.querySelectorAll("audio").forEach(a => a.muted = false);
+    }, { once: true });
+  </script>
+</body>
+</html>
