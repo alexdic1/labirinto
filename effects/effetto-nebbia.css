@@ -1,0 +1,13 @@
+.nebbia {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('../img/sfondo-nebbia.png') repeat;
+  opacity: 0.2;
+  animation: movimentoNebbia 60s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+@keyframes movimentoNebbia {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 0; }
+}
